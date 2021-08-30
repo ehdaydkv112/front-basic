@@ -43,10 +43,16 @@ twitter:url: 페이지 주소(URL) -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     
-    <!-- lodash, gsap -->
+    <!-- lodash, gsap, swiperjs -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js" integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ==" crossorigin="anonymous" referrerpolicy="referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="referrer"></script>
     
+  <!--Swiper-->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@6.8.4/swiper-bundle.min.js"></script>
+
+
+  <script defer src="./js/youtube.js"> </script>
     <script defer src="./js/main.js"></script>
     <title>starTaejin</title>
 
@@ -380,19 +386,130 @@ twitter:url: 페이지 주소(URL) -->
     <section class='visual'>
       <div class="inner">
 
-        <div class="title">
+        <div class="title fade-in">
           <img src="./images/visual_title.png" alt="STARBUCKS DELIGHTFUL START TO THE YEARS" />
-          <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
         </div>
 
-        <img src="./images/visual_cup1.png" alt="NEW OTHEMAL LATTE" class="cup1 image" />
-        <img src="./images/visual_cup1_text.png" alt="오트밀 라떼" class="cup1 text" />
-        <img src="./images/visual_cup2.png" alt="new STARBUCKS CRUMBLE MOCHA" class="cup2 image" />
-        <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text" />
-        <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+
+        <div class="fade-in">
+          <img src="./images/visual_cup1.png" alt="NEW OTHEMAL LATTE" class="cup1 image" />
+          <img src="./images/visual_cup1_text.png" alt="오트밀 라떼" class="cup1 text" />
+        </div>
+
+        <div class="fade-in">
+          <img src="./images/visual_cup2.png" alt="new STARBUCKS CRUMBLE MOCHA" class="cup2 image" />
+          <img src="./images/visual_cup2_text.png" alt="스타벅스 카라멜 크럼블 모카" class="cup2 text" />
+        </div>
+
+        <div class="fade-in">
+          <img src="./images/visual_spoon.png" alt="Spoon" class="spoon" />
+        </div>
+      </div>
+    </section>
+
+<!-- NOTICE -->
+    <section class="notice">
+      <div class="notice-line">
+        <div class="bg-left"></div>
+        <div class="bg-right"></div>
+        <div class="inner">
+          
+          <div class="inner__left">
+            <h2>공지사항</h2>
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">크리스마스 블라블라 태진 크리스마스도 개발하겠지..?</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">[태진 태진] 2021엔 리액트 노드 둘다 한다ㅋ</a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">프론트아아아아아아아아아아아아아 </a>
+                </div>
+                <div class="swiper-slide">
+                  <a href="javascript:void(0)">[후후후] 산토리니 탄산수 맛없지만 맛있어</a>
+                </div>
+              </div>
+            </div>
+            <a href="javascript:void(0)" class="notice-line__more">
+              <div class="material-icons">add_circle</div>
+            </a>
+          </div>
+          
+          <div class="inner__right">
+            <h2>스타벅스 프로모션</h2>
+            <div class="toggle-promotion">
+              <div class="material-icons">upload</div>
+            </div>
+          </div>
+        </div>
       </div>
 
-    </section>
     
+      <!-- PROMOTION -->
+      <div class="promotion">
+
+
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide1.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide2.jpg" alt="기간 내 스타벅스 카드 e-Gift를 3만원 이상 선물 시, 아메리카노 e-쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide3.jpg" alt="뉴이어 푸드와 제조 음료를 세트로 구매 시, 뉴이어 음료 BOGO(1+1) 쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide4.jpg" alt="신년 MD 상품 포함 3만원 이상 구매 고객께 아메리카노(톨사이즈) 쿠폰을 드립니다." />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/promotion_slide5.jpg" alt="2017 DIGITAL LUCKY DRAW 100% 당첨의 행운을 드립니다!" />
+            <a href="javascript:void(0)" class="btn">자세히 보기</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+      <div class="swiper-prev">
+        <div class="material-icons">arrow_back</div>
+      </div>
+      <div class="swiper-next">
+        <div class="material-icons">arrow_forward</div>
+      </div>
+    </section>
+
+    <!-- REWARDS -->
+    <section class="rewards">
+      <div class="bg-left"></div>
+      <div class="bg-right"></div>
+      <div class="inner">
+        <div class="btn-group">
+          <div class="btn btn--reverse sign-up">회원가입</div>
+          <div class="btn sign-in">로그인</div>
+          <div class="btn gift">리액트리액트</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- YOUTUBE VIDEO -->
+    <section class="youtube">
+      <div class="youtube__area">
+        <div id="player">
+
+        </div>
+      </div>
+
+      <div class="youtube__cover">
+
+      </div>
+    </section>
   </body>
 </html>
